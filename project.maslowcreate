@@ -6,11 +6,11 @@
     "uniqueID": 236468,
     "ioValues": [
         {
-            "name": "Amount",
+            "name": "Shape",
             "ioValue": 10
         },
         {
-            "name": "Shape",
+            "name": "Amount",
             "ioValue": 10
         }
     ],
@@ -48,7 +48,7 @@
                     "ioValue": 10
                 }
             ],
-            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(InputShape, AmtToGrow){\n  return InputShape.grow(10);        //return must be geometry;\n}\n\nreturn main(InputShape, AmtToGrow)"
+            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(InputShape, AmtToGrow){\n  return InputShape.grow(AmtToGrow);        //return must be geometry;\n}\n\nreturn main(InputShape, AmtToGrow)"
         },
         {
             "atomType": "Output",
