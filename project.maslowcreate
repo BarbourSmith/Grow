@@ -4,21 +4,51 @@
     "x": 0,
     "y": 0,
     "uniqueID": 236468,
-    "ioValues": [],
+    "ioValues": [
+        {
+            "name": "Amount",
+            "ioValue": 10
+        },
+        {
+            "name": "Shape",
+            "ioValue": 10
+        }
+    ],
     "topLevel": true,
     "allAtoms": [
         {
-            "atomType": "Circle",
-            "name": "Circle",
-            "x": 0.681283422459893,
-            "y": 0.5381679389312977,
-            "uniqueID": 273150,
+            "atomType": "Input",
+            "name": "Shape",
+            "x": 0.013333333333333334,
+            "y": 0.3969465648854962,
+            "uniqueID": 693168,
+            "ioValues": []
+        },
+        {
+            "atomType": "Input",
+            "name": "Amount",
+            "x": 0.013333333333333334,
+            "y": 0.5877862595419847,
+            "uniqueID": 213592,
+            "ioValues": []
+        },
+        {
+            "atomType": "Code",
+            "name": "Code",
+            "x": 0.467379679144385,
+            "y": 0.3931297709923664,
+            "uniqueID": 359080,
             "ioValues": [
                 {
-                    "name": "diameter",
+                    "name": "InputShape",
+                    "ioValue": 10
+                },
+                {
+                    "name": "AmtToGrow",
                     "ioValue": 10
                 }
-            ]
+            ],
+            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(InputShape, AmtToGrow){\n  return InputShape.grow(10);        //return must be geometry;\n}\n\nreturn main(InputShape, AmtToGrow)"
         },
         {
             "atomType": "Output",
@@ -29,22 +59,36 @@
             "ioValues": [
                 {
                     "name": "number or geometry",
-                    "ioValue": "atoms/236468/273150Circle"
+                    "ioValue": "atoms/236468/359080Code"
                 }
             ]
         }
     ],
     "allConnectors": [
         {
+            "ap1Name": "number or geometry",
+            "ap2Name": "InputShape",
+            "ap2Primary": false,
+            "ap1ID": 693168,
+            "ap2ID": 359080
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "AmtToGrow",
+            "ap2Primary": false,
+            "ap1ID": 213592,
+            "ap2ID": 359080
+        },
+        {
             "ap1Name": "geometry",
             "ap2Name": "number or geometry",
             "ap2Primary": false,
-            "ap1ID": 273150,
+            "ap1ID": 359080,
             "ap2ID": 396068
         }
     ],
     "fileTypeVersion": 1,
     "simplify": false,
     "filetypeVersion": 1,
-    "circleSegmentSize": 2
+    "circleSegmentSize": "0.051"
 }
