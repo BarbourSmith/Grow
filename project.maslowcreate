@@ -25,19 +25,11 @@
             "ioValues": []
         },
         {
-            "atomType": "Input",
-            "name": "Amount",
-            "x": 0.013333333333333334,
-            "y": 0.5877862595419847,
-            "uniqueID": 213592,
-            "ioValues": []
-        },
-        {
             "atomType": "Code",
             "name": "Code",
-            "x": 0.467379679144385,
-            "y": 0.3931297709923664,
-            "uniqueID": 359080,
+            "x": 0.3492063492063492,
+            "y": 0.46153846153846156,
+            "uniqueID": 483001,
             "ioValues": [
                 {
                     "name": "InputShape",
@@ -48,7 +40,28 @@
                     "ioValue": 10
                 }
             ],
-            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(InputShape, AmtToGrow){\n  return InputShape.grow(AmtToGrow);        //return must be geometry;\n}\n\nreturn main(InputShape, AmtToGrow)"
+            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n//Inputs:[InputShape, AmtToGrow];\n\n\nreturn InputShape.grow(AmtToGrow);  "
+        },
+        {
+            "atomType": "Input",
+            "name": "Amount",
+            "x": 0.013333333333333334,
+            "y": 0.5877862595419847,
+            "uniqueID": 213592,
+            "ioValues": []
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.8763227513227514,
+            "y": 0.5705128205128205,
+            "uniqueID": 105862,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ]
         },
         {
             "atomType": "Output",
@@ -59,7 +72,7 @@
             "ioValues": [
                 {
                     "name": "number or geometry",
-                    "ioValue": "atoms/236468/359080Code"
+                    "ioValue": "atoms/236468/105862Circle"
                 }
             ]
         }
@@ -70,25 +83,26 @@
             "ap2Name": "InputShape",
             "ap2Primary": false,
             "ap1ID": 693168,
-            "ap2ID": 359080
+            "ap2ID": 483001
         },
         {
             "ap1Name": "number or geometry",
             "ap2Name": "AmtToGrow",
             "ap2Primary": false,
             "ap1ID": 213592,
-            "ap2ID": 359080
+            "ap2ID": 483001
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "number or geometry",
             "ap2Primary": false,
-            "ap1ID": 359080,
+            "ap1ID": 105862,
             "ap2ID": 396068
         }
     ],
     "fileTypeVersion": 1,
     "simplify": false,
+    "unitsIndex": 0,
     "filetypeVersion": 1,
     "circleSegmentSize": "0.051"
 }
