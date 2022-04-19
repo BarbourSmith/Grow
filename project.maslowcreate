@@ -51,23 +51,6 @@
             "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n//Inputs:[InputShape, AmtToGrow];\n\n\nreturn InputShape.fuse().grow(AmtToGrow);  "
         },
         {
-            "atomType": "Rectangle",
-            "name": "Rectangle",
-            "x": 0.35912698412698413,
-            "y": 0.7476923076923077,
-            "uniqueID": 112901,
-            "ioValues": [
-                {
-                    "name": "x length",
-                    "ioValue": 10
-                },
-                {
-                    "name": "y length",
-                    "ioValue": 10
-                }
-            ]
-        },
-        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9786096256684492,
